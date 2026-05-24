@@ -1,0 +1,35 @@
+#!/usr/bin/env python3
+"""
+EeveePython Hello World Example
+A simple introduction to EeveePython programming
+"""
+
+def greet(name="Eevee"):
+    """
+    Greet someone with style
+    
+    Args:
+        name: The name to greet (default: "Eevee")
+    
+    Returns:
+        A greeting message
+    """
+    return f"Welcome to EeveePython, {name}!"
+
+
+def main():
+    """Main entry point"""
+    print(greet())
+    print("=" * 40)
+    print("EeveePython is ready to evolve!")
+    print("=" * 40)
+    
+    # Example of versatility
+    evolutions = ["Vaporeon", "Jolteon", "Flareon", "Espeon", "Umbreon"]
+    print("\nPossible evolutions:")
+    for evolution in evolutions:
+        print(f"  • {evolution}")
+
+
+if __name__ == "__main__":
+    main()
