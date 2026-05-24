@@ -1,0 +1,71 @@
+"""
+EeveePython Utilities Module
+Common utility functions and helpers for EeveePython projects
+"""
+
+
+def epy_banner():
+    """Display the EeveePython banner"""
+    banner = """
+    ┌─────────────────────────────────┐
+    │     Welcome to EeveePython      │
+    │   The Adaptable Python Variant  │
+    │        File Extension: .epy     │
+    └─────────────────────────────────┘
+    """
+    print(banner)
+
+
+def get_epy_info():
+    """Get information about EeveePython"""
+    info = {
+        "name": "EeveePython",
+        "extension": ".epy",
+        "based_on": "Python 3.x",
+        "description": "A custom Python variant with distinctive .epy file extensions",
+        "use_case": "Identifying and managing EeveePython-specific projects"
+    }
+    return info
+
+
+def validate_epy_file(filename):
+    """
+    Validate if a file has the correct .epy extension
+    
+    Args:
+        filename: Name of the file to validate
+    
+    Returns:
+        Boolean indicating if the file has .epy extension
+    """
+    return filename.endswith('.epy')
+
+
+def list_epy_features():
+    """List the key features of EeveePython"""
+    features = [
+        "Custom .epy file extension",
+        "Full Python 3.x compatibility",
+        "Easy project identification",
+        "Modular architecture",
+        "Extensible framework"
+    ]
+    return features
+
+
+def main():
+    """Display EeveePython information"""
+    epy_banner()
+    
+    print("\n📋 EeveePython Features:")
+    for i, feature in enumerate(list_epy_features(), 1):
+        print(f"  {i}. {feature}")
+    
+    print("\n📊 EeveePython Info:")
+    info = get_epy_info()
+    for key, value in info.items():
+        print(f"  {key.replace('_', ' ').title()}: {value}")
+
+
+if __name__ == "__main__":
+    main()
