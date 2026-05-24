@@ -1,0 +1,10 @@
+"""
+EeveePython Core Module
+Core functionality and utilities for EeveePython
+"""
+
+__version__ = "0.1.0"
+__author__ = "pacifichatvr6755-blip"
+__description__ = "A custom Python variant with .epy file extensions"
+
+print(f"EeveePython Core v{__version__} initialized")
